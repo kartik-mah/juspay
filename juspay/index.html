@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav_content">
+            <nav>
+                <img src="img/logo.png" alt="">
+                <h3>Home</h3>
+                <h3>Products</h3>
+                <h3>Tech</h3>
+                <h3>Developers</h3>
+                <h3>Blog</h3>
+                <h3>About</h3>
+                <h3>Global</h3>
+                <h3>Contact</h3>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="main_content">
+                <h2>India's</h2>
+                <h1>Payments<br>Operating<br>System</h1>
+                <p>We Unify payment gateways to give you a seamless, secure, <br>reliable, end-to-end, enterprise-grade payment stack to achieve <br>higher revenue at lower cost</p>
+                <button>Learn More</button> 
+            </div> 
+            <img src="0.png" alt="">
+        </div>
+        <div class="trends">
+            <img src="trend.png" alt="">
+        </div>
+        <div class="second_slide">
+            <img src="bulk.png" alt="">
+        </div> 
+        <div class="payments">
+            <div class="img">
+                <h1>End-to-End Payments Stack To accelerate Your 10x growth</h1>
+                <img src="6.png" alt=""><br>
+                <img src="7.png" alt=""><br>
+                <img src="8.png" alt="">
+            </div>
+            <div class="written">
+                <h3>NATIVE SDK WITH 1-CLICK EXPERIENCE</h3>
+                <h2>Superior UX to improve your NPS</h2>
+                <h5>Blended Native Payment Page, In-App UPI, 1-click card payments and more innovative offerings</h5>
+                <h3>ORCHESTRATION PLATFORM</h3>
+                <h2>5-10% higher conversions</h2>
+                <h5>100+ integrations, intelligent routing, automatic retries, optimized with data from billions of transactions</h5>
+                <h3>END TO END SOLUTIONS FOR SCALE</h3>
+                <h2>Reduce your payment OPS by 80%</h2>
+                <h5>Fully managed infrastructure and automated workflows designed for scale, security and reliability</h5>
+            </div>
+        </div>
+        <div class="devep">
+            <h1>
+                For Developers.
+            </h1>
+            <h2>
+                By Developers.
+            </h2>
+        </div>
+        <div class="developers">
+            <div class="code">
+               <h4>dthAppFlow :: User -> Flow Unit<br>
+                dthAppFlow user<br>
+                    = showUI $ Info.Welcome user<br>
+                >>= fetch Api.DTHOperators<br>
+                >>= showUI List.DTHOperator<br
+                >>= untilSuccessful $ showUI Form.CustomerId<br>
+                >>= fetch CustomerName<br>
+                >>= fetch Api.LastBill<br>
+                >>= showUI Info.BillDetails<br
+                >>= captureUpiPinFlow<br>
+                >>= commit Api.UpiTransaction<br>
+                >>= showUI $ CrossSell.PaymentOptions [AutoDeduct]<br>
+                >>= autoDeductFlow |> reminderFlow<br>
+                >>= showUI Info.ThankYou
+                </h4>
+            </div>
+            <div class="write">
+                <h2>We believe `Code` can solve payments for the next billion. So we obsess over eliminating complexities, providing elegant abstractions that scale reliably.<br></h2>
+                <h3>Domain Specific Languages [DSL]<br></h3>
+                <h4>Our DSLs allow you to write business logic like a narrative.<br></h4>
+                <h3>Function Reactive Programming (FRP)<br></h3>
+                <h4>Juspay's stack provides composable, robust abstractions. Flexible & modular.</h4>
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="comp">
+                 <ul>
+                    <h1>Company</h1>
+                    <li>About Us</li>
+                    <li>Tech</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                    <li>Newsroom</li>
+                </ul>
+            </div>
+            <div class="product">
+                <ul>
+                    <h1>Products</h1>
+                    <li>Hyper SDK</li>
+                    <li>Express Checkout</li>
+                    <li>Tokenization</li>
+                    <li>UPI Full Stack</li>
+                    <li>Ecosystem Products</li>
+                    <li>Hypercredit</li>
+                    <li>HyperCheckout</li>
+                </ul>
+            </div>
+            <div class="resources">
+                <ul>
+                    <h1>Resources</h1>
+                    <li>Merchant House</li>
+                    <li>API DOcumentation</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="compliance">
+                <ul>
+                    <h1>Compliance</h1>
+                    <li>Privacy Policy</li>
+                    <li>Terms of service</li>
+                    <li>FAQ</li>
+                    <li>Vulnerability Disclosure</li>
+                    <li>Payment Aggregation</li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i class="bi bi-envelope-fill"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
